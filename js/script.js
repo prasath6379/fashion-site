@@ -86,3 +86,23 @@ hamburger.addEventListener('click',()=>
 {
     menuList.classList.toggle("submenu")
 })
+
+
+
+
+
+let loading = document.querySelector(".loading")
+let navbar = document.querySelector("#big")
+let minTime = 2000;
+
+window.addEventListener("load",()=>
+{
+    this.setTimeout(()=>
+    {
+        loading.style.display = "none"
+        navbar.style.display = "block"
+    },minTime)
+})
+
+
+
